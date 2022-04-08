@@ -23,7 +23,7 @@
     margin-bottom: 30px;
   }
 
-  .left > img{
+  .left > img .right > img{
     object-fit: scale-down;
     width: 150px;
     height: 150px;
@@ -50,7 +50,7 @@
 /* BLOCCO LEZIONI */
 #lezioni .row>.left,
 #lezioni .row>.right {
-  width: 50%;
+  width: 100%;
   float: left;
 }
 
