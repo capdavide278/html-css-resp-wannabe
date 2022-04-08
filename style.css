@@ -5,6 +5,7 @@
   margin-top: 100px;
 }
 
+
 @media screen and ( max-width: 420px) {
 
   body{
@@ -17,16 +18,20 @@
     margin-left: 20px;
   }
  
+  h3{
+    font-size: 30px;
+  }
+
   .left{
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
     margin-bottom: 30px;
   }
 
-  .left > img .right > img{
+  .left > img, .right > img, .central > img{
     object-fit: scale-down;
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
   }
 
   .right{
@@ -77,6 +82,22 @@
   text-align: center;
 }
 
+@media screen and (max-width: 420px){
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  #steps, .container.grey{
+    background-color: white;
+  }
+  
+}
+
+
 /* BLOCCO PERCHE */
 #why {
   text-align: center;
@@ -112,4 +133,21 @@ img {
 
 .clear {
   clear: both;
+}
+
+@media screen  and ( max-width: 420px ){
+  #why, .container.grey{
+    background-color: #f2f2cd;
+  }
+
+  img{
+    height: 80px;
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third{
+    margin-top: 20px;
+  }
+  
 }
